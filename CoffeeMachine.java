@@ -13,15 +13,12 @@ public class CoffeeMachine {
         static String coffee = "";
 
         public static void main(String[] args) {
-
-                //MachineStatus();
                 System.out.println("buy, fill, take, remaining, or exit - shutdown: ");
                 userInput();
         }
         public static void userInput() {
                 while (!(coffee.equals("exit"))) {
 
-//                        System.out.println("buy, fill, take, remaining, or exit - shutdown: ");
                         coffee = input.nextLine();
                         if (coffee.equals("buy")) {
                                 Buy();
@@ -102,8 +99,7 @@ public class CoffeeMachine {
         public static void Buy() {
                 System.out.println("1 - Espresso || 2 - Latte || 3 - Cappuccino || 4 - back - main menu");
                 coffeeChoice = input.nextInt();
-//                if (water < 200 || disposableCups < 1 || coffeeBeans < 12 || milk < 75) {
-//                        System.out.println("I cant make that, I need more" + Math.min(water, disposableCups));
+
                         if (coffeeChoice == 1) {
                                 Espresso();
                         }
