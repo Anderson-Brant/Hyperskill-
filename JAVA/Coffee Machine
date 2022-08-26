@@ -1,3 +1,14 @@
+/*
+This coffee machine program starts by asking the user whether they want to "buy", "fill", "take", "remaining", or "exit"
+
+buy:  Asks them what type of coffee beverage they want, and will make it if it has enough resources. Otherwise it will state what's missing.
+fill: Asks the worker how much of each resource is being added to the machine.
+take: gives the worker the money from the machine.
+exit: Shutdown the machine
+
+The coffee machine constantly updates the amount of resources it has, and the money its earned depending on what the user selects. 
+It starts with a predefined amount.
+*/
 
 import java.util.*;
 
