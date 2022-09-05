@@ -1,1 +1,51 @@
+*/
+This is a simple program where Chatty Bot asks the user their name, guesses their age, counts up to an inputted number, and then quizzes them on a
+easy python topic--it will continue asking them until they choose the correct answer.
+*/
+
+
+print('Hello! My name is Aid.')
+print('I was created in 2020.')
+print('Please, remind me your name.')
+
+# asks your name
+myName = str(input())
+
+print('What a great name you have, ' + myName + '!')
+print("Let me guess your age.")
+print("Enter remainders of dividing your age by 3, 5, and 7.")
+
+# guesses the age
+remainder3 = int(input())
+remainder5 = int(input())
+remainder7 = int(input())
+
+yourAge = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105
+print("Your age is " + str(yourAge) + "; that's a good time to start programming!")  # converts int to string
+
+#  counts to number inputted
+print("Now I will prove to you that I can count to any number you want.")
+count = int(input())
+for i in range(count + 1):
+    print(f'{i} !')
+
+print("\n=============\n")
+
+print("Let's test your programming knowledge.")
+print("What is the Range() function used for in Python?")
+print("1. To return the sequence of methods used in a program.")
+print("2. To return the sequence of a given number in a specified range.")
+print("3. To return the sequence of objects in a specified range.")
+print("4. To specify a range of where a variable can be accessed.")
+
+test = int(input())
+while test != 2:
+    try:
+        print("Please, try again.")
+        test = int(input())
+
+    finally:
+        if test == 2:
+            print("Congratulations, have a nice day!")
+            break
 
